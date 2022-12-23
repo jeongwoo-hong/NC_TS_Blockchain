@@ -82,3 +82,11 @@ const lynn: Player<null> = {
     name:"lynn",
     extraInfo:null
 }
+
+type A = Array<number>
+
+let a2:A = [1, 2, 3, 4]
+
+function printAllNumbers(arr: Array<number>){
+    
+}
