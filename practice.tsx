@@ -50,9 +50,7 @@ const add4:Add3 = (a, b, c?:number) => {
 }
 
 type SuperPrint = {
-    (arr:number[]):void
-    (arr:boolean[]):void
-    (arr:string[]):void
+    <T>(arr:T[]):void
 }
 
 const superPrint: SuperPrint = (arr) => {
@@ -62,3 +60,4 @@ const superPrint: SuperPrint = (arr) => {
 superPrint([1, 2, 3, 4])
 superPrint([true, false])
 superPrint(["a", "b", "c"])
+superPrint([1, 2, true, false])
