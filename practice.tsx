@@ -11,3 +11,10 @@ if(typeof a === 'string'){
 function hello(){
     console.log('x')
 }
+
+function add(a:number, b:number):number {
+    return a + b
+}
+
+const add2 = (a:number, b:number) => a + b
+
