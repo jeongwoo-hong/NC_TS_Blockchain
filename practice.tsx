@@ -59,3 +59,26 @@ const A = superPrint([1, 2, 3, 4], 'x')
 const B = superPrint([true, false], 1)
 const C = superPrint(["a", "b", "c"], false)
 const D = superPrint([1, 2, true, false], [])
+
+
+type Player<E> = {
+    name:string
+    extraInfo:E
+}
+
+type NicoExtra = {
+    favFood:string
+}
+type NicoPlayer = Player<{favFood:string}>
+
+const nico: Player<{favFood:string}> = {
+    name:"nico",
+    extraInfo: {
+        favFood:"kimchi"
+    }
+}
+
+const lynn: Player<null> = {
+    name:"lynn",
+    extraInfo:null
+}
