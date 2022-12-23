@@ -48,3 +48,17 @@ const add4:Add3 = (a, b, c?:number) => {
     if(c) return a+b+c
     return a + b
 }
+
+type SuperPrint = {
+    (arr:number[]):void
+    (arr:boolean[]):void
+    (arr:string[]):void
+}
+
+const superPrint: SuperPrint = (arr) => {
+    arr.forEach(i => console.log(i))
+}
+
+superPrint([1, 2, 3, 4])
+superPrint([true, false])
+superPrint(["a", "b", "c"])
