@@ -50,12 +50,12 @@ const add4:Add3 = (a, b, c?:number) => {
 }
 
 type SuperPrint = {
-    <T>(arr:T[]):T
+    <T, M>(a:T[], b:M):T
 }
 
 const superPrint: SuperPrint = (arr) => arr[0]
 
-const A = superPrint([1, 2, 3, 4])
-const B = superPrint([true, false])
-const C = superPrint(["a", "b", "c"])
-const D = superPrint([1, 2, true, false])
+const A = superPrint([1, 2, 3, 4], 'x')
+const B = superPrint([true, false], 1)
+const C = superPrint(["a", "b", "c"], false)
+const D = superPrint([1, 2, true, false], [])
