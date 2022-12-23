@@ -35,7 +35,7 @@ type Push = {
 const push:Push = (config) => {
     if(typeof config === "string") console.log(config)
     else {
-        console.log(config.path)
+        console.log(config.path, config.state)
     }
 }
 
