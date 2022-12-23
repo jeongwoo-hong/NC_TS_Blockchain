@@ -39,3 +39,12 @@ const push:Push = (config) => {
     }
 }
 
+type Add3 = {
+    (a:number, b:number) :number,
+    (a:number, b:number, c:number): number
+}
+
+const add4:Add3 = (a, b, c?:number) => {
+    if(c) return a+b+c
+    return a + b
+}
