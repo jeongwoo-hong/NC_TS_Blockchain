@@ -7,3 +7,7 @@ if(typeof a === 'number'){
 if(typeof a === 'string'){
     let b = a.toUpperCase()
 }
+
+function hello(){
+    console.log('x')
+}
