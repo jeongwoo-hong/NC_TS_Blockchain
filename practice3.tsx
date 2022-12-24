@@ -22,7 +22,9 @@ class LocalStorage<T> {
 const stringsStorage = new LocalStorage<string>()
 
 stringsStorage.get("ket")
+stringsStorage.set("hello", "how are you")
 
 const booleanStorage = new LocalStorage<boolean>()
 
 booleanStorage.get("xxx")
+booleanStorage.set("hello", true)
