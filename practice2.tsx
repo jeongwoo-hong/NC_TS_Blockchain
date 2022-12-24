@@ -1,4 +1,4 @@
-abstract class User {
+abstract class User3 {
     constructor(
         protected firstName:string,
         protected lastName:string
@@ -7,6 +7,11 @@ abstract class User {
     abstract fullName():string
 }
 
-class Player extends User {
-    
+class Player3 extends User3 {
+    getFullName(): string {
+        return `${this.firstName} ${this.lastName}`
+    }
+    sayHi(name:string) {
+        return `Hello ${name}. my name is ${this.fullName}`
+    }
 }
