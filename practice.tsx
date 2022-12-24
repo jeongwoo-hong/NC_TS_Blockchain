@@ -91,12 +91,26 @@ function printAllNumbers(arr: Array<number>){
 
 }
 
-class Player2 {
+abstract class User {
     constructor(
-        private firstName:string,
-        private lastName:string,
+        protected firstName:string,
+        protected lastName:string,
         public nickName:string
     ) {}
+    abstract getNickName():void
+
+    getFullName(){
+        return `${this.firstName} ${this.lastName}`
+    }
+}
+
+class Player2 extends User {
+    getNickName(): {
+        console.log(this.nickName)
+    }
 }
 
 const nico2 = new Player2("nico", "las", "slRH");
+
+nico2.getFullName()
+nico2.nickName
