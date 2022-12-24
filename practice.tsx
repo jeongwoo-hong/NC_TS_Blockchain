@@ -88,5 +88,15 @@ type A = Array<number>
 let a2:A = [1, 2, 3, 4]
 
 function printAllNumbers(arr: Array<number>){
-    
+
 }
+
+class Player2 {
+    constructor(
+        private firstName:string,
+        private lastName:string,
+        public nickName:string
+    ) {}
+}
+
+const nico2 = new Player2("nico", "las", "slRH");
