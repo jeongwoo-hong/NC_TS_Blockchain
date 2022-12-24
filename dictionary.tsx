@@ -16,11 +16,14 @@ class Dict {
     word(term:string){
         return this.words[term]
     }
+    static hello() {
+        return "hello"
+    }
 }
 
 class Word {
     constructor(
-        public term:string,
+        public readonly term:string,
         public def:string
     ) {}
 }
