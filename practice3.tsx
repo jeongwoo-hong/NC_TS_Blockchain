@@ -18,3 +18,11 @@ class LocalStorage<T> {
         this.storage = {}
     }
 }
+
+const stringsStorage = new LocalStorage<string>()
+
+stringsStorage.get("ket")
+
+const booleanStorage = new LocalStorage<boolean>()
+
+booleanStorage.get("xxx")
