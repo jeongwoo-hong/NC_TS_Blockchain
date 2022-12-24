@@ -105,7 +105,7 @@ abstract class User {
 }
 
 class Player2 extends User {
-    getNickName(): {
+    getNickName() {
         console.log(this.nickName)
     }
 }
