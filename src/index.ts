@@ -5,3 +5,5 @@ init({
 })
 
 exit(1)
+
+localStorage.clear()
