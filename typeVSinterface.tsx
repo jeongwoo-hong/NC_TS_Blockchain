@@ -21,6 +21,12 @@ interface PlayerBB extends PlayerB {
     lastName:string
 }
 
+interface PlayerBB {
+    health:number
+}
+
 const playerB : PlayerBB = {
-    name:"nico"
+    name:"nico",
+    lastName: "xxx",
+    health:10
 }
